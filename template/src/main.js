@@ -21,7 +21,7 @@ new Vue({
   {{#router}}
   router,
   {{/router}}
-  {{vuex}}
+  {{#vuex}}
   store
   {{/vuex}}
   {{#if_eq build "runtime"}}
