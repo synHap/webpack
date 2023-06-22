@@ -26,7 +26,7 @@ new Vue({
   router,
   {{/router}}
   {{#vuex}}
-  store
+  store,
   {{/vuex}}
   {{#if_eq build "runtime"}}
   render: h => h(App)
