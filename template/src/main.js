@@ -12,7 +12,11 @@ import Vuex from 'vuex'
 import store from './store/store'
 Vue.use(Vuex)
 {{/vuex}}
-
+{{#elementUI}}
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI)
+{{/elementUI}}
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

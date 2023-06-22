@@ -43,6 +43,9 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
     {{/if_eq}}
+    {{#elementUI}}
+    "element-ui": "^2.15.6",
+    {{/elementUI}}
     {{#if_eq lintConfig "airbnb"}}
     "eslint-config-airbnb-base": "^11.3.0",
     "eslint-import-resolver-webpack": "^0.8.3",

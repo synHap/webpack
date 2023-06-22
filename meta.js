@@ -160,6 +160,11 @@ module.exports = {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Install vuex'
+    },
+    elementUI:{
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install elementUI'
     }
   },
   filters: {
