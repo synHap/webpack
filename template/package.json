@@ -28,7 +28,7 @@
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}{{#vuex}},
     "vuex": "^3.0.1"{{/vuex}}{{#elementUI}},
-    "element-ui": "^2.15.6"{{/elementUI}},
+    "element-ui": "^2.15.6"{{/elementUI}}
   },
   "devDependencies": {
     {{#lint}}
