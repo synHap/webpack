@@ -90,6 +90,15 @@ export default {
               })}
             </el-select>
           );
+        case "DatePicker":
+          return (
+            <el-date-picker
+              onChange={e => (this.form[element.name] = e)}
+              value={this.form[element.name]}
+              type="date"
+              placeholder="选择日期">
+            </el-date-picker>
+          )
       }
     }
   }
