@@ -33,10 +33,10 @@
           width="80"
           :align="'center'"
         >
-          <template slot-scope="scope">
+          <!-- <template slot-scope="scope">
             <el-checkbox @change="handleClick(scope.row)"> </el-checkbox>
             {{ pageSize * (currentPage - 1) + scope.$index + 1 }}
-          </template>
+          </template> -->
         </el-table-column>
         <el-table-column
           type="selection"
