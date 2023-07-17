@@ -51,7 +51,7 @@
         >
         </el-table-column>
         <el-table-column
-          v-for="(val, ide) in tableData.header"
+          v-for="(val,) in tableData.header"
           :min-width="val.width"
           :width="val.columnWidth"
           :key="val.type"
@@ -123,8 +123,9 @@
             <el-button
               @click.native.stop="handleRowChange1(scope.row)"
               :type="tableData.btnType"
-              v-text="tableData.btnName"
-            ></el-button>
+            >
+              {{tableData.btnName}}
+            </el-button>
           </template>
         </el-table-column>
         <!-- 多按钮 -->
@@ -140,8 +141,9 @@
               :key="btnIndex"
               @click.native.stop="handleBtn(scope.row, item)"
               type="text"
-              v-text="item"
-            ></el-button>
+            >
+            {{item}}
+            </el-button>
           </template>
         </el-table-column>
         <!-- 多按钮带有按钮状态 -->
@@ -158,8 +160,9 @@
               @click.native.stop="handleBtn(scope.row, item.name)"
               type="text"
               :disabled="item.isDisabled && scope.row.freezeState"
-              v-text="item.name"
-            ></el-button>
+            >
+            {{item.name}}
+            </el-button>
           </template>
         </el-table-column>
         <!-- 多列单按钮 -->
@@ -174,8 +177,9 @@
               <el-button
                 @click.native.stop="handleBtn(scope.row, item.btnTitle)"
                 type="text"
-                v-text="item.btnTitle"
-              ></el-button>
+              >
+                {{item.btnTitle}}
+              </el-button>
             </template>
           </el-table-column>
         </template>
