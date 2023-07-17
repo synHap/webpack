@@ -76,6 +76,7 @@
               item.showTip && item.showTip == 'false' ? false : true
             "
           >
+          <!-- eslint-disable-next-line -->
             <template slot-scope="scope">
               <slot
                 v-if="item.slot"
@@ -94,6 +95,7 @@
               </div>
             </template>
           </el-table-column>
+          <!-- eslint-disable-next-line -->
           <template slot-scope="scope">
             <slot
               v-if="val.slot"
@@ -119,6 +121,7 @@
           :prop="tableData.btnTitle"
           :label="tableData.btnTitle"
         >
+        <!-- eslint-disable-next-line -->
           <template slot-scope="scope">
             <el-button
               @click.native.stop="handleRowChange1(scope.row)"
@@ -135,6 +138,7 @@
           :width="tableData.btnWidth ? tableData.btnWidth : 120"
           align="center"
         >
+        <!-- eslint-disable-next-line -->
           <template slot-scope="scope">
             <el-button
               v-for="(item, btnIndex) in tableData.btnName"
@@ -153,6 +157,7 @@
           :width="tableData.btnWidth ? tableData.btnWidth : 120"
           align="center"
         >
+        <!-- eslint-disable-next-line -->
           <template slot-scope="scope">
             <el-button
               v-for="(item, btnIndex) in tableData.btnName"
@@ -173,6 +178,7 @@
             :label="item.btnName"
             :width="tableData.btnWidth ? tableData.btnWidth : 120"
           >
+          <!-- eslint-disable-next-line -->
             <template slot-scope="scope">
               <el-button
                 @click.native.stop="handleBtn(scope.row, item.btnTitle)"
